@@ -1,0 +1,46 @@
+.booking-pages{
+  background: var(--white);
+}
+.booking-pages .book-form{
+  padding: 2rem;
+  background: var(--light-bg);
+}
+
+.booking-pages .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking-pages .book-form .flex .input-box {
+    flex: 1 1 41rem;
+}
+  
+.booking-pages .book-form .flex .input-box input {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      font-size: 1.6rem;
+      color: var(--light-black);
+      text-transform: none;
+      margin-top: 1.5rem;
+      border: 0.2rem solid var(--black);
+}
+
+    
+.booking-pages .book-form .flex .input-box input:focus {
+    background: var(--black);
+    color: var(--white);
+}
+      
+.booking-pages .book-form .flex .input-box input:focus::placeholder {
+      color: var(--white);
+}
+  
+.booking-pages .book-form .flex .input-box span {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.booking-pages .book-form .btn {
+      margin-top: 2rem;
+}

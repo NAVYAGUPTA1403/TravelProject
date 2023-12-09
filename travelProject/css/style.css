@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Golos+Text&family=Nunito+Sans:opsz@6..12&family=Oswald&family=Oxygen&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&family=Quicksand:wght@700&family=Roboto:ital,wght@0,500;1,300;1,400;1,500&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root{
+        --green:#219150;
+        --black: #10221b;
+        --light-black:#777;
+        --white:#fff;
+        --light-bg:#eee;
+        --light-white:#fff9;
+        --light:#d8dbe0;
+        --dark:#28292c;
+        --border: .2rem solid --black;
+        --box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+        --text-shadow: 0 1.5rem 3rem rgba(0,0,0,.1);
+        --filter:invert(1);
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  }
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white); 
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black); 
+}
+
+    /* theme toggle */
+.dark-theme{
+    --white:#111111;
+    --black:#fff;
+    --light-bg:#3b3636;
+    --border: .2rem solid $black;
+    --dark:#fff;
+}
+
+.dark-theme .services .box-container .box img{
+    filter: invert(1);
+}
+
+.dark-theme .services .box-container .box:hover img{
+    filter: invert(10%);
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  }
+  .btn:hover {
+    background-color: var(--black);
+    color: var(--white); }
+
+
+
+.heading {
+  text-align: center;
+  margin: 2.5rem;
+  font-size: 4rem;
+  color: var(--black); }
+
+                  /* PAGES(ABOUT , PACKAGES , BOOK) */
+
+.heading-pages {
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.heading-pages h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,37 @@
+.footer {
+  background: linear-gradient(rgba(40, 41, 44, 0.5), rgba(40, 41, 44, 0.5)), url(https://cdn.pixabay.com/photo/2016/10/14/19/21/canyon-1740973_1280.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem; }
+    .footer .box-container .box h3 {
+      font-size: 2rem;
+      padding: 1.5rem 0;
+      color: #fff;
+      } 
+    .footer .box-container .box a {
+      display: block;
+      font-size: 1.4rem;
+      color: #fff;
+      padding: 1rem 0; }
+      .footer .box-container .box a i {
+        color: var(--green);
+        padding-right: .5rem; }
+      .footer .box-container .box a:hover {
+        color: var(--green); }
+        .footer .box-container .box a:hover i {
+          padding-right: 2rem; }
+          .footer .box-container .box a:hover i .fa-envelope {
+            text-transform: lowercase; }
+  .footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff; }
+    .footer .credit span {
+      color: var(--green); }

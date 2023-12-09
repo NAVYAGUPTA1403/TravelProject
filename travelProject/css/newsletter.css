@@ -1,0 +1,32 @@
+.newsletter {
+  background: var(--light-bg); }
+  .newsletter .content {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center; }
+    .newsletter .content p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: var(--black); }
+    .newsletter .content form {
+      margin-top: 2rem;
+      background: var(--white);
+      border: 0.2rem solid var(--black);
+      border-radius: 5rem;
+      padding: .7rem;
+      display: flex; }
+      .newsletter .content form .email {
+        width: 100%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: var(--black);
+        padding: 0 1.3rem; }
+      .newsletter .content form .btn {
+        margin-top: 0;
+        border-radius: 5rem;
+        background: var(--black);
+        color: var(--white); }
+        .newsletter .content form .btn:hover {
+          background: none;
+          color: var(--black); }

@@ -1,0 +1,7 @@
+.clients {
+  background: var(--white); }
+  .clients .clients-slider .slide {
+    text-align: center; 
+    }
+    .clients .clients-slider .slide img {
+      height: 12rem; }
