@@ -6,10 +6,7 @@ on:
       source_repo:
         description: "Source Repo for dev release"
         required: true
-        type: choice
-        options:
-          - ieg-addons
-          - ieg-platform
+        type: string
       existing_pr:
         description: "PR Number"
         required: true
