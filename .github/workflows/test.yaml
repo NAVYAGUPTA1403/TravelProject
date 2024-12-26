@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
             name: output-artifact
-            path: ieg-addons-tag.txt
+            path: NAVYAGUPTA1403/ECommerce/ieg-addons-tag.txt
