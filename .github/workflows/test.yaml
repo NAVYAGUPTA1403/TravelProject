@@ -25,3 +25,10 @@ jobs:
           echo "Component Name: ${{ github.event.client_payload.source_repo }}"
           echo "Version: ${{ github.event.client_payload.existing_pr }}"
           echo "token: ${{ github.event.client_payload.pat_token }}"
+          echo "pr_dev_tag" > ieg-addons-tag.txt
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+            name: output-artifact
+            path: ieg-addons-tag.txt
