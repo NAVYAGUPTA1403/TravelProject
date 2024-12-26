@@ -8,6 +8,11 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code from specified branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.client_payload.branch_name }}
+          
       - name: Log Inputs
         run: |
           echo "Component Name: ${{ github.event.client_payload.source_repo }}"
