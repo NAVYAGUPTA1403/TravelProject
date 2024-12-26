@@ -3,18 +3,6 @@ name: Create Component Dev Release
 on:
   repository_dispatch:
     types: [Trigger Workflow]
-    inputs:
-      existing_pr:
-        description: "PR Number"
-        required: true
-        default: "main"
-      source_repo:
-        description: "Source Repo for dev release"
-        required: true
-        type: string
-      pat_token:
-        description: "PAT token for auth"
-        required: true
 
 jobs:
   release:
