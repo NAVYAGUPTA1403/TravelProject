@@ -22,6 +22,6 @@ jobs:
     steps:
       - name: Log Inputs
         run: |
-          echo "Component Name: ${{ github.event.inputs.source_repo }}"
-          echo "Version: ${{ github.event.inputs.existing_pr }}"
-          echo "token: ${{ github.event.inputs.pat_token }}"
+          echo "Component Name: ${{ github.event.client_payload.source_repo }}"
+          echo "Version: ${{ github.event.client_payload.existing_pr }}"
+          echo "token: ${{ github.event.client_payload.pat_token }}"
