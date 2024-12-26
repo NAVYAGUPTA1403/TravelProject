@@ -1,7 +1,7 @@
 name: Create Component Dev Release
 
 on:
-  workflow_dispatch:
+  repository_dispatch:
     inputs:
       source_repo:
         description: "Source Repo for dev release"
