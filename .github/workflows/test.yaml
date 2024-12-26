@@ -21,10 +21,3 @@ jobs:
           echo "pr_dev_tag" > ieg-addons-tag.txt
           echo "workspace: $GITHUB_WORKSPACE"
           echo "Done"
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-            name: output-artifact
-            path: ../../
-            if-no-files-found: error
