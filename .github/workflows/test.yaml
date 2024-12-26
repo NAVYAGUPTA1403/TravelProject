@@ -1,0 +1,29 @@
+name: Create Component Dev Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_repo:
+        description: "Source Repo for dev release"
+        required: true
+        type: choice
+        options:
+          - ieg-addons
+          - ieg-platform
+      existing_pr:
+        description: "PR Number"
+        required: true
+        default: "main"
+      pat_token:
+        description: "PAT token for auth"
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Inputs
+        run: |
+          echo "Component Name: ${{ github.event.inputs.source_repo }}"
+          echo "Version: ${{ github.event.inputs.existing_pr }}"
+          echo "token: ${{ github.event.inputs.pat_token }}"
