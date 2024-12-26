@@ -28,7 +28,7 @@ jobs:
           echo "pr_dev_tag" > ieg-addons-tag.txt
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
             name: output-artifact
             path: ieg-addons-tag.txt
