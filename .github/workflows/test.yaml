@@ -22,10 +22,14 @@ jobs:
           echo "Version: ${{ github.event.client_payload.existing_pr }}"
           echo "token: ${{ github.event.client_payload.pat_token }}"
           echo "pr_dev_tag" > ieg-addons-tag.txt
-          echo "workspace: $GITHUB_WORKSPACE" > tag_name.txt
+          RELEASE_TAG="ieg_0.0.381" # Example value
+          echo "RELEASE_TAG=${RELEASE_TAG}" >> $GITHUB_ENV
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+
+      - name: Return RELEASE_TAG to Workflow A
+        uses: peter-evans/repository-dispatch@v1
         with:
-            name: tag_name
-            path: tag_name.txt
+          token: ${{ secrets.NAVYA_GH_TOKEN }}
+          repository: NAVYAGUPTA1403/ECommerce
+          event-type: return-release-tag
+          client-payload: '{"release_tag": "${{ env.RELEASE_TAG }}"}'
