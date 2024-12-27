@@ -29,4 +29,3 @@ jobs:
         with:
             name: tag_name
             path: tag_name.txt
-            if-no-files-found: error
