@@ -22,7 +22,7 @@ jobs:
           echo "Version: ${{ github.event.client_payload.existing_pr }}"
           echo "token: ${{ github.event.client_payload.pat_token }}"
           echo "pr_dev_tag" > ieg-addons-tag.txt
-          echo "workspace: $GITHUB_WORKSPACE"
+          echo "workspace: $GITHUB_WORKSPACE" > tag_name.txt
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
