@@ -2,6 +2,7 @@ name: Create Component Dev Release
 
 on:
   repository_dispatch:
+    types: [Trigger Workflow]
 
 jobs:
   release:
